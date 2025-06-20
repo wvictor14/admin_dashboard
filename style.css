@@ -2,7 +2,7 @@
 
 * {
   border: 1px solid rgb(8, 72, 129);
-  background-color:aliceblue;
+  background-color:white;
   font-family: Roboto, sans-serif;
 }
 
@@ -71,7 +71,14 @@ i {
 .main .search {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 50px 30px 100px
+  grid-template-columns: 40px 1fr 50px 40px 100px
+}
+.searchbar {
+  width: 95%;
+  background-color: rgb(219, 220, 214);
+  border-radius: 1em;
+  padding: 2px 15px;
+  margin: 6px 6px 6px 0px;
 }
 
 .hellobar {
@@ -87,9 +94,25 @@ i {
 .content .projects {
   display: grid;
   height: 400px;
-   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
 }
 .rightbar {
   display: grid;
 
+}
+
+.btn {
+  cursor: pointer;
+  border: none; /* Remove borders */
+  padding: 2px 6px; /* Some padding */
+}
+.profilepic {
+  display: flex;
+  padding: 4px;
+}
+.hellobar .profilepic {
+  padding: 10px;
+}
+.name {
+  font-weight: 800;
 }
