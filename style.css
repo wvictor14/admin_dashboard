@@ -1,4 +1,6 @@
 @import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 :root {
   --primary: #4E598C;
   --secondary: #F9C784;
@@ -60,7 +62,7 @@ a {
   margin-left: 10px;
   list-style: none;
   align-items: start;
-  
+  cursor: pointer;
 }
 a > :nth-child(2) {
   align-self:  start;
@@ -99,13 +101,14 @@ input.searchbar {
   padding: 2px 15px;
   height: 25px;
   margin: 9px 6px 9px 0px;
-
+  border: 0px;
 }
 
 .btn-symbol {
   cursor: pointer;
   border: none; /* Remove borders */
   padding: 0px 0px; /* No padding */
+  background-color: inherit;
 }
 .profilepic {
   display: grid;
@@ -284,4 +287,17 @@ input.searchbar {
 }
 .announcement:last-child {
   border-bottom: none;
+}
+
+.person {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 30px 1fr;
+}
+.person img {
+  height: 30px;
+}
+.person .username {
+  font-weight:lighter;
+  color: grey;
 }
