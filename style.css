@@ -7,7 +7,7 @@
   --background-color: rgb(226, 220, 220);
 }
 * {
-  border: 1px solid rgb(8, 72, 129);
+  /* border: 1px solid rgb(8, 72, 129); */
   font-family: Roboto, sans-serif;
 }
 body {font-size: 85%;height:100%}
@@ -255,6 +255,12 @@ input.searchbar {
   display: grid;
   background-color: var(--background-color);
   grid-auto-rows: max-content;
+  margin-top: 10px;
+}
+.rightbar > h4 {
+  text-align: left;
+  padding-left: 10px;
+  margin-top: 10px;
 }
 
 .rightbar .section {
@@ -264,11 +270,18 @@ input.searchbar {
   text-align: left;
   font-size: 0.7rem;
   border-radius: 1rem;
-  padding: 8px;
+  padding: 10px;
 }
 
 .card {
   background-color: var(--white);
   margin: 5px;
+}
+
+.announcement {
   padding: 5px;
+  border-bottom: 1px solid black;
+}
+.announcement:last-child {
+  border-bottom: none;
 }
