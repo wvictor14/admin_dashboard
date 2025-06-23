@@ -67,6 +67,8 @@ html {
 }
 a {
   cursor: pointer;
+  text-decoration: none;
+  color: inherit;
 }
 .nav-items a > :nth-child(2) {
   align-self:  start;
