@@ -9,12 +9,15 @@
   background-color:white;
   font-family: Roboto, sans-serif;
 }
-body {font-size: 85%;}
-
+body {font-size: 85%;height:100%}
+html {
+  height: 100%;
+}
 .container {
   display: grid;
   grid-template-columns: 200px 1fr;
   text-align: center;
+  height: 100%;
 }
 
 .sidebar {
