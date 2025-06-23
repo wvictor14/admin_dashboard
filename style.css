@@ -106,7 +106,7 @@ input.searchbar {
 .btn-symbol {
   cursor: pointer;
   border: none; /* Remove borders */
-  padding: 2px 6px; /* Some padding */
+  padding: 0px 0px; /* No padding */
 }
 .profilepic {
   display: grid;
