@@ -198,24 +198,43 @@ input.searchbar {
   background-color: inherit;
 }
 
-.projects-2column-card .project {
+.project {
   border-radius: 0.9rem;
   border: 0px;
   background-color: white;
-  height: 200px;
+  height: clamp(80 125px 250px);
   padding: 6px;
   gap: 6px;
   display: grid;
   grid-template-rows: 30px 1fr 25px;
   justify-items: start;
+
+    /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
 }
+
+/* On mouse-over, add a deeper shadow */
+.project:hover {
+  box-shadow: 0 16px 24px 0 rgba(0,0,0,0.2);
+}
+
 .project .title {
   margin-top: 5px;
   font-weight: bold;
 }
 .project-content {
   font-size: smaller;
+  text-align: left;
 }
 
+.project-controls {
+  display: grid;
+  justify-content: end;
+  width: 100%;
+  margin-left: auto;
+  gap: 0px;
+  grid-template-columns: repeat(3, 30px);
+}
 
 /* rightbar */
